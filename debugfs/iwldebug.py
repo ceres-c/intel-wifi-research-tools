@@ -295,7 +295,6 @@ def write_mem(args: argparse.Namespace) -> None:
     wifi.open_mem()
     wifi.write(args.addr, data)
 
-
 def read_prph_reg(args: argparse.Namespace) -> None:
     """Read peripheral registers"""
     wifi = WifiDebug(args.path)
